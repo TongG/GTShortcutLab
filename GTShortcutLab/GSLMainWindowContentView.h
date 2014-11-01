@@ -31,28 +31,13 @@
  **                                                                         **
  ****************************************************************************/
 
-#import "GSLAppDelegate.h"
-#import "GSLMainWindowController.h"
+#import <Cocoa/Cocoa.h>
 
-// GSLAppDelegate class
-@implementation GSLAppDelegate
+#pragma mark GSLMainWindowContentView class
+@interface GSLMainWindowContentView : NSView
 
-@synthesize _mainWindowController;
 
-#pragma mark Conforms <NSNibLoading> protocol
-- ( void ) awakeFromNib
-    {
-    self._mainWindowController = [ GSLMainWindowController mainWindowController ];
-
-    [ self._mainWindowController showWindow: self ];
-    }
-
-- ( void ) applicationDidFinishLaunching: ( NSNotification* )_Notification
-    {
-
-    }
-
-@end // GSLAppDelegate
+@end // GLSMainWindowContentView class
 
 //////////////////////////////////////////////////////////////////////////////
 

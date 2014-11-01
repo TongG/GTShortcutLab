@@ -31,28 +31,46 @@
  **                                                                         **
  ****************************************************************************/
 
-#import "GSLAppDelegate.h"
-#import "GSLMainWindowController.h"
+#import "GSLMainWindowContentView.h"
 
-// GSLAppDelegate class
-@implementation GSLAppDelegate
+#pragma mark GSLMainWindowContentView class
+@implementation GSLMainWindowContentView
 
-@synthesize _mainWindowController;
-
-#pragma mark Conforms <NSNibLoading> protocol
-- ( void ) awakeFromNib
+- ( BOOL ) canBecomeKeyView
     {
-    self._mainWindowController = [ GSLMainWindowController mainWindowController ];
-
-    [ self._mainWindowController showWindow: self ];
+    return YES;
     }
 
-- ( void ) applicationDidFinishLaunching: ( NSNotification* )_Notification
+- ( BOOL ) acceptsFirstResponder
     {
-
+    return YES;
     }
 
-@end // GSLAppDelegate
+- ( void ) keyDown: ( NSEvent* )_Event
+    {
+    unsigned long stdFlags = ( NSControlKeyMask | NSAlternateKeyMask | NSCommandKeyMask | NSNumericPadKeyMask );
+    NSLog( @"Standard Flags: %lu", stdFlags );
+
+    MASShortcut* shortcut = [ MASShortcut shortcutWithKeyCode: kVK_ANSI_O
+                                                modifierFlags: stdFlags ];
+    NSLog( @"Key code after filtering: %lu", [ shortcut keyCode ] );
+    NSLog( @"Flags after filtering: %lu", [ shortcut modifierFlags ] );
+
+//    MASShortcut* shortcut = [ MASShortcut shortcutWithEvent: _Event ];
+//    NSLog( @"%@", shortcut );
+
+    [ super keyDown: _Event ];
+    }
+
+#if 0
+- ( void ) mouseDown: ( NSEvent* )_Event
+    {
+    MASShortcut* shortcut = [ MASShortcut shortcutWithEvent: _Event ];
+
+    [ super mouseDown: _Event ];
+    }
+#endif
+@end // GSLMainWindowContentView class
 
 //////////////////////////////////////////////////////////////////////////////
 

@@ -16,7 +16,7 @@
             <windowPositionMask key="initialPositionMask" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="462" width="203" height="62"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
-            <view key="contentView" id="EiT-Mj-1SZ">
+            <view key="contentView" id="EiT-Mj-1SZ" customClass="GSLMainWindowContentView">
                 <rect key="frame" x="0.0" y="0.0" width="203" height="62"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>

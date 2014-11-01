@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831D65231A048B400073CAF3 /* GSLMainWindowContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 831D65221A048B400073CAF3 /* GSLMainWindowContentView.m */; };
 		83ED8EF31A0477C9001A6335 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ED8EF21A0477C9001A6335 /* Cocoa.framework */; };
 		83ED8EFD1A0477C9001A6335 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83ED8EFB1A0477C9001A6335 /* InfoPlist.strings */; };
 		83ED8EFF1A0477C9001A6335 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ED8EFE1A0477C9001A6335 /* main.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		831D65211A048B400073CAF3 /* GSLMainWindowContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSLMainWindowContentView.h; sourceTree = "<group>"; };
+		831D65221A048B400073CAF3 /* GSLMainWindowContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSLMainWindowContentView.m; sourceTree = "<group>"; };
 		83ED8EEF1A0477C9001A6335 /* GTShortcutLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTShortcutLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83ED8EF21A0477C9001A6335 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		83ED8EF51A0477C9001A6335 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -153,6 +156,8 @@
 				83ED8F051A0477C9001A6335 /* GSLAppDelegate.m */,
 				83ED8F281A04784A001A6335 /* GSLMainWindowController.h */,
 				83ED8F291A04784A001A6335 /* GSLMainWindowController.m */,
+				831D65211A048B400073CAF3 /* GSLMainWindowContentView.h */,
+				831D65221A048B400073CAF3 /* GSLMainWindowContentView.m */,
 				83ED8EF91A0477C9001A6335 /* Supporting Files */,
 			);
 			path = GTShortcutLab;
@@ -315,6 +320,7 @@
 				83ED8EFF1A0477C9001A6335 /* main.m in Sources */,
 				83ED8F3A1A047C1B001A6335 /* MASShortcut+UserDefaults.m in Sources */,
 				83ED8F3D1A047C1B001A6335 /* MASShortcutView.m in Sources */,
+				831D65231A048B400073CAF3 /* GSLMainWindowContentView.m in Sources */,
 				83ED8F3C1A047C1B001A6335 /* MASShortcutView+UserDefaults.m in Sources */,
 				83ED8F061A0477C9001A6335 /* GSLAppDelegate.m in Sources */,
 				83ED8F3B1A047C1B001A6335 /* MASShortcut.m in Sources */,
