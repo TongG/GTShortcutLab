@@ -33,13 +33,13 @@
 
 #import "GSLAppDelegate.h"
 #import "GSLMainWindowController.h"
+#import "MASShortcut.h"
 
 // GSLAppDelegate class
 @implementation GSLAppDelegate
 
 @synthesize _mainWindowController;
 
-#pragma mark -
 #pragma mark Conforms <NSNibLoading> protocol
 - ( void ) awakeFromNib
     {
@@ -50,7 +50,11 @@
 
 - ( void ) applicationDidFinishLaunching: ( NSNotification* )_Notification
     {
+    unsigned flags = NSShiftKeyMask ;
 
+    NSLog( @"%u", flags );
+    NSLog( @"%u", flags & NSControlKeyMask );
+    NSLog( @"%u", flags );
     }
 
 @end // GSLAppDelegate
