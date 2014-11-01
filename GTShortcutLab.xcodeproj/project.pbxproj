@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83ED8EF31A0477C9001A6335 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ED8EF21A0477C9001A6335 /* Cocoa.framework */; };
+		83ED8EFD1A0477C9001A6335 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83ED8EFB1A0477C9001A6335 /* InfoPlist.strings */; };
+		83ED8EFF1A0477C9001A6335 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ED8EFE1A0477C9001A6335 /* main.m */; };
+		83ED8F031A0477C9001A6335 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 83ED8F011A0477C9001A6335 /* Credits.rtf */; };
+		83ED8F061A0477C9001A6335 /* GSLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ED8F051A0477C9001A6335 /* GSLAppDelegate.m */; };
+		83ED8F091A0477C9001A6335 /* GSLMainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83ED8F071A0477C9001A6335 /* GSLMainMenu.xib */; };
+		83ED8F0B1A0477C9001A6335 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83ED8F0A1A0477C9001A6335 /* Images.xcassets */; };
+		83ED8F121A0477C9001A6335 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ED8F111A0477C9001A6335 /* XCTest.framework */; };
+		83ED8F131A0477C9001A6335 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ED8EF21A0477C9001A6335 /* Cocoa.framework */; };
+		83ED8F1B1A0477C9001A6335 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83ED8F191A0477C9001A6335 /* InfoPlist.strings */; };
+		83ED8F1D1A0477C9001A6335 /* GTShortcutLabTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ED8F1C1A0477C9001A6335 /* GTShortcutLabTests.m */; };
+		83ED8F271A04783F001A6335 /* GSLMainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83ED8F261A04783F001A6335 /* GSLMainWindow.xib */; };
+		83ED8F2A1A04784A001A6335 /* GSLMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ED8F291A04784A001A6335 /* GSLMainWindowController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83ED8F141A0477C9001A6335 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83ED8EE71A0477C9001A6335 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83ED8EEE1A0477C9001A6335;
+			remoteInfo = GTShortcutLab;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		83ED8EEF1A0477C9001A6335 /* GTShortcutLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTShortcutLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ED8EF21A0477C9001A6335 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		83ED8EF51A0477C9001A6335 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		83ED8EF61A0477C9001A6335 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		83ED8EF71A0477C9001A6335 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		83ED8EFA1A0477C9001A6335 /* GTShortcutLab-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GTShortcutLab-Info.plist"; sourceTree = "<group>"; };
+		83ED8EFC1A0477C9001A6335 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		83ED8EFE1A0477C9001A6335 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83ED8F001A0477C9001A6335 /* GTShortcutLab-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTShortcutLab-Prefix.pch"; sourceTree = "<group>"; };
+		83ED8F021A0477C9001A6335 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		83ED8F041A0477C9001A6335 /* GSLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSLAppDelegate.h; sourceTree = "<group>"; };
+		83ED8F051A0477C9001A6335 /* GSLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSLAppDelegate.m; sourceTree = "<group>"; };
+		83ED8F081A0477C9001A6335 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GSLMainMenu.xib; sourceTree = "<group>"; };
+		83ED8F0A1A0477C9001A6335 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		83ED8F101A0477C9001A6335 /* GTShortcutLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GTShortcutLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ED8F111A0477C9001A6335 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		83ED8F181A0477C9001A6335 /* GTShortcutLabTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GTShortcutLabTests-Info.plist"; sourceTree = "<group>"; };
+		83ED8F1A1A0477C9001A6335 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		83ED8F1C1A0477C9001A6335 /* GTShortcutLabTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTShortcutLabTests.m; sourceTree = "<group>"; };
+		83ED8F261A04783F001A6335 /* GSLMainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSLMainWindow.xib; sourceTree = "<group>"; };
+		83ED8F281A04784A001A6335 /* GSLMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSLMainWindowController.h; sourceTree = "<group>"; };
+		83ED8F291A04784A001A6335 /* GSLMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSLMainWindowController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83ED8EEC1A0477C9001A6335 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ED8EF31A0477C9001A6335 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ED8F0D1A0477C9001A6335 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ED8F131A0477C9001A6335 /* Cocoa.framework in Frameworks */,
+				83ED8F121A0477C9001A6335 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83ED8EE61A0477C9001A6335 = {
+			isa = PBXGroup;
+			children = (
+				83ED8EF81A0477C9001A6335 /* GTShortcutLab */,
+				83ED8F161A0477C9001A6335 /* GTShortcutLabTests */,
+				83ED8EF11A0477C9001A6335 /* Frameworks */,
+				83ED8EF01A0477C9001A6335 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83ED8EF01A0477C9001A6335 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83ED8EEF1A0477C9001A6335 /* GTShortcutLab.app */,
+				83ED8F101A0477C9001A6335 /* GTShortcutLabTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83ED8EF11A0477C9001A6335 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83ED8EF21A0477C9001A6335 /* Cocoa.framework */,
+				83ED8F111A0477C9001A6335 /* XCTest.framework */,
+				83ED8EF41A0477C9001A6335 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83ED8EF41A0477C9001A6335 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83ED8EF51A0477C9001A6335 /* AppKit.framework */,
+				83ED8EF61A0477C9001A6335 /* CoreData.framework */,
+				83ED8EF71A0477C9001A6335 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		83ED8EF81A0477C9001A6335 /* GTShortcutLab */ = {
+			isa = PBXGroup;
+			children = (
+				83ED8F041A0477C9001A6335 /* GSLAppDelegate.h */,
+				83ED8F051A0477C9001A6335 /* GSLAppDelegate.m */,
+				83ED8F261A04783F001A6335 /* GSLMainWindow.xib */,
+				83ED8F281A04784A001A6335 /* GSLMainWindowController.h */,
+				83ED8F291A04784A001A6335 /* GSLMainWindowController.m */,
+				83ED8F071A0477C9001A6335 /* GSLMainMenu.xib */,
+				83ED8F0A1A0477C9001A6335 /* Images.xcassets */,
+				83ED8EF91A0477C9001A6335 /* Supporting Files */,
+			);
+			path = GTShortcutLab;
+			sourceTree = "<group>";
+		};
+		83ED8EF91A0477C9001A6335 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83ED8EFA1A0477C9001A6335 /* GTShortcutLab-Info.plist */,
+				83ED8EFB1A0477C9001A6335 /* InfoPlist.strings */,
+				83ED8EFE1A0477C9001A6335 /* main.m */,
+				83ED8F001A0477C9001A6335 /* GTShortcutLab-Prefix.pch */,
+				83ED8F011A0477C9001A6335 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83ED8F161A0477C9001A6335 /* GTShortcutLabTests */ = {
+			isa = PBXGroup;
+			children = (
+				83ED8F1C1A0477C9001A6335 /* GTShortcutLabTests.m */,
+				83ED8F171A0477C9001A6335 /* Supporting Files */,
+			);
+			path = GTShortcutLabTests;
+			sourceTree = "<group>";
+		};
+		83ED8F171A0477C9001A6335 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83ED8F181A0477C9001A6335 /* GTShortcutLabTests-Info.plist */,
+				83ED8F191A0477C9001A6335 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83ED8EEE1A0477C9001A6335 /* GTShortcutLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83ED8F201A0477C9001A6335 /* Build configuration list for PBXNativeTarget "GTShortcutLab" */;
+			buildPhases = (
+				83ED8EEB1A0477C9001A6335 /* Sources */,
+				83ED8EEC1A0477C9001A6335 /* Frameworks */,
+				83ED8EED1A0477C9001A6335 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTShortcutLab;
+			productName = GTShortcutLab;
+			productReference = 83ED8EEF1A0477C9001A6335 /* GTShortcutLab.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83ED8F0F1A0477C9001A6335 /* GTShortcutLabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83ED8F231A0477C9001A6335 /* Build configuration list for PBXNativeTarget "GTShortcutLabTests" */;
+			buildPhases = (
+				83ED8F0C1A0477C9001A6335 /* Sources */,
+				83ED8F0D1A0477C9001A6335 /* Frameworks */,
+				83ED8F0E1A0477C9001A6335 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83ED8F151A0477C9001A6335 /* PBXTargetDependency */,
+			);
+			name = GTShortcutLabTests;
+			productName = GTShortcutLabTests;
+			productReference = 83ED8F101A0477C9001A6335 /* GTShortcutLabTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83ED8EE71A0477C9001A6335 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GSL;
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					83ED8F0F1A0477C9001A6335 = {
+						TestTargetID = 83ED8EEE1A0477C9001A6335;
+					};
+				};
+			};
+			buildConfigurationList = 83ED8EEA1A0477C9001A6335 /* Build configuration list for PBXProject "GTShortcutLab" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83ED8EE61A0477C9001A6335;
+			productRefGroup = 83ED8EF01A0477C9001A6335 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83ED8EEE1A0477C9001A6335 /* GTShortcutLab */,
+				83ED8F0F1A0477C9001A6335 /* GTShortcutLabTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83ED8EED1A0477C9001A6335 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ED8F271A04783F001A6335 /* GSLMainWindow.xib in Resources */,
+				83ED8EFD1A0477C9001A6335 /* InfoPlist.strings in Resources */,
+				83ED8F0B1A0477C9001A6335 /* Images.xcassets in Resources */,
+				83ED8F031A0477C9001A6335 /* Credits.rtf in Resources */,
+				83ED8F091A0477C9001A6335 /* GSLMainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ED8F0E1A0477C9001A6335 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ED8F1B1A0477C9001A6335 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83ED8EEB1A0477C9001A6335 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ED8F2A1A04784A001A6335 /* GSLMainWindowController.m in Sources */,
+				83ED8EFF1A0477C9001A6335 /* main.m in Sources */,
+				83ED8F061A0477C9001A6335 /* GSLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ED8F0C1A0477C9001A6335 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ED8F1D1A0477C9001A6335 /* GTShortcutLabTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83ED8F151A0477C9001A6335 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83ED8EEE1A0477C9001A6335 /* GTShortcutLab */;
+			targetProxy = 83ED8F141A0477C9001A6335 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83ED8EFB1A0477C9001A6335 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83ED8EFC1A0477C9001A6335 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		83ED8F011A0477C9001A6335 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83ED8F021A0477C9001A6335 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		83ED8F071A0477C9001A6335 /* GSLMainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83ED8F081A0477C9001A6335 /* Base */,
+			);
+			name = GSLMainMenu.xib;
+			sourceTree = "<group>";
+		};
+		83ED8F191A0477C9001A6335 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83ED8F1A1A0477C9001A6335 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83ED8F1E1A0477C9001A6335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		83ED8F1F1A0477C9001A6335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		83ED8F211A0477C9001A6335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GTShortcutLab/GTShortcutLab-Prefix.pch";
+				INFOPLIST_FILE = "GTShortcutLab/GTShortcutLab-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		83ED8F221A0477C9001A6335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GTShortcutLab/GTShortcutLab-Prefix.pch";
+				INFOPLIST_FILE = "GTShortcutLab/GTShortcutLab-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		83ED8F241A0477C9001A6335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GTShortcutLab.app/Contents/MacOS/GTShortcutLab";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GTShortcutLab/GTShortcutLab-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GTShortcutLabTests/GTShortcutLabTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		83ED8F251A0477C9001A6335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GTShortcutLab.app/Contents/MacOS/GTShortcutLab";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GTShortcutLab/GTShortcutLab-Prefix.pch";
+				INFOPLIST_FILE = "GTShortcutLabTests/GTShortcutLabTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83ED8EEA1A0477C9001A6335 /* Build configuration list for PBXProject "GTShortcutLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ED8F1E1A0477C9001A6335 /* Debug */,
+				83ED8F1F1A0477C9001A6335 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83ED8F201A0477C9001A6335 /* Build configuration list for PBXNativeTarget "GTShortcutLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ED8F211A0477C9001A6335 /* Debug */,
+				83ED8F221A0477C9001A6335 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		83ED8F231A0477C9001A6335 /* Build configuration list for PBXNativeTarget "GTShortcutLabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ED8F241A0477C9001A6335 /* Debug */,
+				83ED8F251A0477C9001A6335 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83ED8EE71A0477C9001A6335 /* Project object */;
+}
