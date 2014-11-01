@@ -5,13 +5,15 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>BA062C06-E81B-4F5E-BCF1-31496F7F17FA</string>
+	<string>647F5134-9B8D-465B-870D-79AA2CC248C7</string>
 	<key>IDESourceControlProjectName</key>
 	<string>GTShortcutLab</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>3417F7B3-3A3C-4B07-A86E-BA7757DFF204</key>
 		<string>https://github.com/TongG/MASShortcut.git</string>
+		<key>4AF22914-4CE8-46AE-9B7B-918394608FEE</key>
+		<string>https://github.com/TongG/GTShortcutLab.git</string>
 		<key>710625E9-C6A8-4DD5-9455-CC38286358BC</key>
 		<string>https://github.com/TongG/Oh-My-Fan.git</string>
 	</dict>
@@ -21,11 +23,13 @@
 	<dict>
 		<key>3417F7B3-3A3C-4B07-A86E-BA7757DFF204</key>
 		<string>../../GTShortcutLab/MASShortcut</string>
+		<key>4AF22914-4CE8-46AE-9B7B-918394608FEE</key>
+		<string>../..</string>
 		<key>710625E9-C6A8-4DD5-9455-CC38286358BC</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/TongG/Oh-My-Fan.git</string>
+	<string>https://github.com/TongG/GTShortcutLab.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -39,6 +43,14 @@
 			<string>710625E9-C6A8-4DD5-9455-CC38286358BC</string>
 			<key>IDESourceControlWCCName</key>
 			<string>git</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4AF22914-4CE8-46AE-9B7B-918394608FEE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GTShortcutLab</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>

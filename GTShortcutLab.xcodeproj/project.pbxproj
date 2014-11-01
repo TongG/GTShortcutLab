@@ -97,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		831D65201A047CED0073CAF3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83ED8F261A04783F001A6335 /* GSLMainWindow.xib */,
+				83ED8F071A0477C9001A6335 /* GSLMainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		83ED8EE61A0477C9001A6335 = {
 			isa = PBXGroup;
 			children = (
@@ -139,13 +148,11 @@
 		83ED8EF81A0477C9001A6335 /* GTShortcutLab */ = {
 			isa = PBXGroup;
 			children = (
+				831D65201A047CED0073CAF3 /* Resources */,
 				83ED8F041A0477C9001A6335 /* GSLAppDelegate.h */,
 				83ED8F051A0477C9001A6335 /* GSLAppDelegate.m */,
-				83ED8F261A04783F001A6335 /* GSLMainWindow.xib */,
 				83ED8F281A04784A001A6335 /* GSLMainWindowController.h */,
 				83ED8F291A04784A001A6335 /* GSLMainWindowController.m */,
-				83ED8F071A0477C9001A6335 /* GSLMainMenu.xib */,
-				83ED8F0A1A0477C9001A6335 /* Images.xcassets */,
 				83ED8EF91A0477C9001A6335 /* Supporting Files */,
 			);
 			path = GTShortcutLab;
@@ -154,6 +161,7 @@
 		83ED8EF91A0477C9001A6335 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				83ED8F0A1A0477C9001A6335 /* Images.xcassets */,
 				83ED8F2B1A047C1B001A6335 /* MASShortcut */,
 				83ED8EFA1A0477C9001A6335 /* GTShortcutLab-Info.plist */,
 				83ED8EFB1A0477C9001A6335 /* InfoPlist.strings */,
