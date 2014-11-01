@@ -48,16 +48,23 @@
 
 - ( void ) keyDown: ( NSEvent* )_Event
     {
-    unsigned long stdFlags = ( NSControlKeyMask | NSAlternateKeyMask | NSCommandKeyMask | NSNumericPadKeyMask );
-    NSLog( @"Standard Flags: %lu", stdFlags );
+//    unsigned long stdFlags = ( NSControlKeyMask | NSAlternateKeyMask | NSCommandKeyMask | NSNumericPadKeyMask );
+//    NSLog( @"Standard Flags: %lu", stdFlags );
+//
+//    MASShortcut* shortcut = [ MASShortcut shortcutWithKeyCode: kVK_ANSI_O
+//                                                modifierFlags: stdFlags ];
+//    NSLog( @"Key code after filtering: %lu", [ shortcut keyCode ] );
+//    NSLog( @"Carbon key code: %u", [ shortcut carbonKeyCode ] );
+//    NSLog( @"Flags after filtering: %lu", [ shortcut modifierFlags ] );
+//    printf( "\n\n" );
 
-    MASShortcut* shortcut = [ MASShortcut shortcutWithKeyCode: kVK_ANSI_O
-                                                modifierFlags: stdFlags ];
-    NSLog( @"Key code after filtering: %lu", [ shortcut keyCode ] );
-    NSLog( @"Flags after filtering: %lu", [ shortcut modifierFlags ] );
-
-//    MASShortcut* shortcut = [ MASShortcut shortcutWithEvent: _Event ];
-//    NSLog( @"%@", shortcut );
+    MASShortcut* shortcut = [ MASShortcut shortcutWithEvent: _Event ];
+    NSLog( @"Key code: %lu", [ shortcut keyCode ] );
+    NSLog( @"Carbon key code: %u", [ shortcut carbonKeyCode ] );
+    NSLog( @"Modifier Flags: %lu", [ shortcut modifierFlags ] );
+    NSLog( @"Carbon Flags: %u", [ shortcut carbonFlags ] );
+    NSLog( @"%@", shortcut );
+    printf( "\n\n" );
 
     [ super keyDown: _Event ];
     }
