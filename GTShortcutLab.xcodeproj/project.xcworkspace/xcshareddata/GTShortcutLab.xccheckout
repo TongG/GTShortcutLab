@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BA062C06-E81B-4F5E-BCF1-31496F7F17FA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GTShortcutLab</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3417F7B3-3A3C-4B07-A86E-BA7757DFF204</key>
+		<string>https://github.com/TongG/MASShortcut.git</string>
+		<key>710625E9-C6A8-4DD5-9455-CC38286358BC</key>
+		<string>https://github.com/TongG/Oh-My-Fan.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GTShortcutLab/GTShortcutLab.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3417F7B3-3A3C-4B07-A86E-BA7757DFF204</key>
+		<string>../../GTShortcutLab/MASShortcut</string>
+		<key>710625E9-C6A8-4DD5-9455-CC38286358BC</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/TongG/Oh-My-Fan.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>710625E9-C6A8-4DD5-9455-CC38286358BC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>710625E9-C6A8-4DD5-9455-CC38286358BC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>git</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3417F7B3-3A3C-4B07-A86E-BA7757DFF204</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MASShortcut</string>
+		</dict>
+	</array>
+</dict>
+</plist>

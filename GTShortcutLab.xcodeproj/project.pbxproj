@@ -20,6 +20,13 @@
 		83ED8F1D1A0477C9001A6335 /* GTShortcutLabTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ED8F1C1A0477C9001A6335 /* GTShortcutLabTests.m */; };
 		83ED8F271A04783F001A6335 /* GSLMainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83ED8F261A04783F001A6335 /* GSLMainWindow.xib */; };
 		83ED8F2A1A04784A001A6335 /* GSLMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ED8F291A04784A001A6335 /* GSLMainWindowController.m */; };
+		83ED8F381A047C1B001A6335 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 83ED8F2C1A047C1B001A6335 /* .gitignore */; };
+		83ED8F391A047C1B001A6335 /* MASShortcut+Monitoring.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ED8F2E1A047C1B001A6335 /* MASShortcut+Monitoring.m */; };
+		83ED8F3A1A047C1B001A6335 /* MASShortcut+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ED8F301A047C1B001A6335 /* MASShortcut+UserDefaults.m */; };
+		83ED8F3B1A047C1B001A6335 /* MASShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ED8F321A047C1B001A6335 /* MASShortcut.m */; };
+		83ED8F3C1A047C1B001A6335 /* MASShortcutView+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ED8F341A047C1B001A6335 /* MASShortcutView+UserDefaults.m */; };
+		83ED8F3D1A047C1B001A6335 /* MASShortcutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ED8F361A047C1B001A6335 /* MASShortcutView.m */; };
+		83ED8F3E1A047C1B001A6335 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 83ED8F371A047C1B001A6335 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +62,18 @@
 		83ED8F261A04783F001A6335 /* GSLMainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSLMainWindow.xib; sourceTree = "<group>"; };
 		83ED8F281A04784A001A6335 /* GSLMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSLMainWindowController.h; sourceTree = "<group>"; };
 		83ED8F291A04784A001A6335 /* GSLMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSLMainWindowController.m; sourceTree = "<group>"; };
+		83ED8F2C1A047C1B001A6335 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		83ED8F2D1A047C1B001A6335 /* MASShortcut+Monitoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcut+Monitoring.h"; sourceTree = "<group>"; };
+		83ED8F2E1A047C1B001A6335 /* MASShortcut+Monitoring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcut+Monitoring.m"; sourceTree = "<group>"; };
+		83ED8F2F1A047C1B001A6335 /* MASShortcut+UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcut+UserDefaults.h"; sourceTree = "<group>"; };
+		83ED8F301A047C1B001A6335 /* MASShortcut+UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcut+UserDefaults.m"; sourceTree = "<group>"; };
+		83ED8F311A047C1B001A6335 /* MASShortcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASShortcut.h; sourceTree = "<group>"; };
+		83ED8F321A047C1B001A6335 /* MASShortcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcut.m; sourceTree = "<group>"; };
+		83ED8F331A047C1B001A6335 /* MASShortcutView+UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcutView+UserDefaults.h"; sourceTree = "<group>"; };
+		83ED8F341A047C1B001A6335 /* MASShortcutView+UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcutView+UserDefaults.m"; sourceTree = "<group>"; };
+		83ED8F351A047C1B001A6335 /* MASShortcutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASShortcutView.h; sourceTree = "<group>"; };
+		83ED8F361A047C1B001A6335 /* MASShortcutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcutView.m; sourceTree = "<group>"; };
+		83ED8F371A047C1B001A6335 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +154,7 @@
 		83ED8EF91A0477C9001A6335 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				83ED8F2B1A047C1B001A6335 /* MASShortcut */,
 				83ED8EFA1A0477C9001A6335 /* GTShortcutLab-Info.plist */,
 				83ED8EFB1A0477C9001A6335 /* InfoPlist.strings */,
 				83ED8EFE1A0477C9001A6335 /* main.m */,
@@ -160,6 +180,25 @@
 				83ED8F191A0477C9001A6335 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83ED8F2B1A047C1B001A6335 /* MASShortcut */ = {
+			isa = PBXGroup;
+			children = (
+				83ED8F2C1A047C1B001A6335 /* .gitignore */,
+				83ED8F2D1A047C1B001A6335 /* MASShortcut+Monitoring.h */,
+				83ED8F2E1A047C1B001A6335 /* MASShortcut+Monitoring.m */,
+				83ED8F2F1A047C1B001A6335 /* MASShortcut+UserDefaults.h */,
+				83ED8F301A047C1B001A6335 /* MASShortcut+UserDefaults.m */,
+				83ED8F311A047C1B001A6335 /* MASShortcut.h */,
+				83ED8F321A047C1B001A6335 /* MASShortcut.m */,
+				83ED8F331A047C1B001A6335 /* MASShortcutView+UserDefaults.h */,
+				83ED8F341A047C1B001A6335 /* MASShortcutView+UserDefaults.m */,
+				83ED8F351A047C1B001A6335 /* MASShortcutView.h */,
+				83ED8F361A047C1B001A6335 /* MASShortcutView.m */,
+				83ED8F371A047C1B001A6335 /* README.md */,
+			);
+			path = MASShortcut;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +280,9 @@
 				83ED8F271A04783F001A6335 /* GSLMainWindow.xib in Resources */,
 				83ED8EFD1A0477C9001A6335 /* InfoPlist.strings in Resources */,
 				83ED8F0B1A0477C9001A6335 /* Images.xcassets in Resources */,
+				83ED8F3E1A047C1B001A6335 /* README.md in Resources */,
 				83ED8F031A0477C9001A6335 /* Credits.rtf in Resources */,
+				83ED8F381A047C1B001A6335 /* .gitignore in Resources */,
 				83ED8F091A0477C9001A6335 /* GSLMainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,8 +303,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				83ED8F2A1A04784A001A6335 /* GSLMainWindowController.m in Sources */,
+				83ED8F391A047C1B001A6335 /* MASShortcut+Monitoring.m in Sources */,
 				83ED8EFF1A0477C9001A6335 /* main.m in Sources */,
+				83ED8F3A1A047C1B001A6335 /* MASShortcut+UserDefaults.m in Sources */,
+				83ED8F3D1A047C1B001A6335 /* MASShortcutView.m in Sources */,
+				83ED8F3C1A047C1B001A6335 /* MASShortcutView+UserDefaults.m in Sources */,
 				83ED8F061A0477C9001A6335 /* GSLAppDelegate.m in Sources */,
+				83ED8F3B1A047C1B001A6335 /* MASShortcut.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +524,7 @@
 				83ED8F221A0477C9001A6335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83ED8F231A0477C9001A6335 /* Build configuration list for PBXNativeTarget "GTShortcutLabTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +533,7 @@
 				83ED8F251A0477C9001A6335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
