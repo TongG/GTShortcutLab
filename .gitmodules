@@ -1,0 +1,3 @@
+[submodule "GTShortcutLab/MASShortcut"]
+	path = GTShortcutLab/MASShortcut
+	url = https://github.com/TongG/MASShortcut.git
