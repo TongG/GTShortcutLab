@@ -59,12 +59,18 @@
 //    printf( "\n\n" );
 
     MASShortcut* shortcut = [ MASShortcut shortcutWithEvent: _Event ];
-    NSLog( @"Key code: %lu", [ shortcut keyCode ] );
-    NSLog( @"Carbon key code: %u", [ shortcut carbonKeyCode ] );
-    NSLog( @"Modifier Flags: %lu", [ shortcut modifierFlags ] );
-    NSLog( @"Carbon Flags: %u", [ shortcut carbonFlags ] );
-    NSLog( @"%@", shortcut );
+//    NSLog( @"Key code: %lu", [ shortcut keyCode ] );
+//    NSLog( @"Carbon key code: %u", [ shortcut carbonKeyCode ] );
+//    NSLog( @"Modifier Flags: %lu", [ shortcut modifierFlags ] );
+//    NSLog( @"Carbon Flags: %u", [ shortcut carbonFlags ] );
+//    NSLog( @"%@", shortcut );
+    NSLog( @"%@", shortcut.keyCodeString );
+    NSLog( @"%@", shortcut.keyCodeStringForKeyEquivalent );
+    NSLog( @"%@", shortcut.modifierFlagsString );
+    NSLog( @"Complete: %@", shortcut.description );
     printf( "\n\n" );
+
+    NSLog( @"%@", MASShortcutChar( 0xF710 ) );
 
     [ super keyDown: _Event ];
     }
