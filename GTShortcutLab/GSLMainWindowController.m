@@ -58,7 +58,18 @@
 #pragma mark Conforms <NSNibAwaking> protocol
 - ( void ) awakeFromNib
     {
-//    MASShortcut* shortcut = [ MASShortcut shortcutWithKeyCode: 
+    MASShortcut* shortcut = [ MASShortcut shortcutWithKeyCode: kVK_ANSI_T
+                                                modifierFlags: NSCommandKeyMask | NSShiftKeyMask ];
+
+    NSError* error = nil;
+    BOOL isTakenError = [ shortcut isKeyEquivalent: [ shortcut keyCodeStringForKeyEquivalent ]
+                                             flags: [ shortcut modifierFlags ]
+                                       takenInMenu: self.menu
+                                             error: &error ];
+    if ( isTakenError && error )
+        {
+        [ self presentError: error ];
+        }
     }
 
 @end // GSLMainWindowController
