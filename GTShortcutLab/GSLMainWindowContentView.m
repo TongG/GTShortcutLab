@@ -58,7 +58,7 @@
 //    NSLog( @"Flags after filtering: %lu", [ shortcut modifierFlags ] );
 //    printf( "\n\n" );
 
-    MASShortcut* shortcut = [ MASShortcut shortcutWithEvent: _Event ];
+//    MASShortcut* shortcut = [ MASShortcut shortcutWithEvent: _Event ];
 //    shortcut
 //    NSLog( @"%@", shortcut.keyCodeString );
 //    NSLog( @"%@", shortcut.keyCodeStringForKeyEquivalent );
