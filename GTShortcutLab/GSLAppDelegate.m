@@ -49,7 +49,7 @@
 
 - ( void ) applicationDidFinishLaunching: ( NSNotification* )_Notification
     {
-//    NSString* string = [ [ NSString alloc ] init ];
+
     }
 
 @end // GSLAppDelegate

@@ -48,6 +48,16 @@
 
 - ( void ) keyDown: ( NSEvent* )_Event
     {
+    typedef void ( ^GSLPrintBlock )( void );
+    GSLPrintBlock printFuck =
+        ^void ( void )
+            {
+            NSLog( @"Fuck" );
+            };
+
+    dispatch_once_t static sOnceToken;
+    dispatch_once( &sOnceToken, printFuck );
+    
 //    unsigned long stdFlags = ( NSControlKeyMask | NSAlternateKeyMask | NSCommandKeyMask | NSNumericPadKeyMask );
 //    NSLog( @"Standard Flags: %lu", stdFlags );
 //

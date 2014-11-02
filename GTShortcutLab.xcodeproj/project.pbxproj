@@ -213,7 +213,6 @@
 		83ED8F2B1A047C1B001A6335 /* MASShortcut */ = {
 			isa = PBXGroup;
 			children = (
-				83ED8F2C1A047C1B001A6335 /* .gitignore */,
 				83ED8F2D1A047C1B001A6335 /* MASShortcut+Monitoring.h */,
 				83ED8F2E1A047C1B001A6335 /* MASShortcut+Monitoring.m */,
 				83ED8F2F1A047C1B001A6335 /* MASShortcut+UserDefaults.h */,
@@ -224,6 +223,7 @@
 				83ED8F341A047C1B001A6335 /* MASShortcutView+UserDefaults.m */,
 				83ED8F351A047C1B001A6335 /* MASShortcutView.h */,
 				83ED8F361A047C1B001A6335 /* MASShortcutView.m */,
+				83ED8F2C1A047C1B001A6335 /* .gitignore */,
 				83ED8F371A047C1B001A6335 /* README.md */,
 			);
 			path = MASShortcut;
