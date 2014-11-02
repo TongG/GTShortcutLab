@@ -6,6 +6,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="GSLMainWindowController">
             <connections>
+                <outlet property="menu" destination="jKg-lR-UCp" id="78e-CP-riI"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="JvV-DU-0jz"/>
             </connections>
         </customObject>
@@ -27,5 +28,17 @@
                 </subviews>
             </view>
         </window>
+        <menu id="jKg-lR-UCp">
+            <items>
+                <menuItem title="Japan" image="japan" keyEquivalent="J" id="V9u-zo-xTZ"/>
+                <menuItem title="South Korea" image="south-korea" keyEquivalent="S" id="CgE-5B-44G"/>
+                <menuItem title="Taiwan" image="the-republic-of-china" keyEquivalent="T" id="8DQ-8T-2VB"/>
+            </items>
+        </menu>
     </objects>
+    <resources>
+        <image name="japan" width="250" height="167"/>
+        <image name="south-korea" width="250" height="167"/>
+        <image name="the-republic-of-china" width="250" height="167"/>
+    </resources>
 </document>

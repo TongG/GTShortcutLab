@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		831D65231A048B400073CAF3 /* GSLMainWindowContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 831D65221A048B400073CAF3 /* GSLMainWindowContentView.m */; };
+		83D8F9AE1A05DF950035FD64 /* macau.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D8F9A91A05DF950035FD64 /* macau.png */; };
+		83D8F9AF1A05DF950035FD64 /* hong-kong.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D8F9AA1A05DF950035FD64 /* hong-kong.png */; };
+		83D8F9B01A05DF950035FD64 /* south-korea.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D8F9AB1A05DF950035FD64 /* south-korea.png */; };
+		83D8F9B11A05DF950035FD64 /* japan.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D8F9AC1A05DF950035FD64 /* japan.png */; };
+		83D8F9B21A05DF950035FD64 /* the-republic-of-china.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D8F9AD1A05DF950035FD64 /* the-republic-of-china.png */; };
 		83ED8EF31A0477C9001A6335 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ED8EF21A0477C9001A6335 /* Cocoa.framework */; };
 		83ED8EFD1A0477C9001A6335 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83ED8EFB1A0477C9001A6335 /* InfoPlist.strings */; };
 		83ED8EFF1A0477C9001A6335 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ED8EFE1A0477C9001A6335 /* main.m */; };
@@ -43,6 +48,11 @@
 /* Begin PBXFileReference section */
 		831D65211A048B400073CAF3 /* GSLMainWindowContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSLMainWindowContentView.h; sourceTree = "<group>"; };
 		831D65221A048B400073CAF3 /* GSLMainWindowContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSLMainWindowContentView.m; sourceTree = "<group>"; };
+		83D8F9A91A05DF950035FD64 /* macau.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macau.png; sourceTree = "<group>"; };
+		83D8F9AA1A05DF950035FD64 /* hong-kong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hong-kong.png"; sourceTree = "<group>"; };
+		83D8F9AB1A05DF950035FD64 /* south-korea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "south-korea.png"; sourceTree = "<group>"; };
+		83D8F9AC1A05DF950035FD64 /* japan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = japan.png; sourceTree = "<group>"; };
+		83D8F9AD1A05DF950035FD64 /* the-republic-of-china.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "the-republic-of-china.png"; sourceTree = "<group>"; };
 		83ED8EEF1A0477C9001A6335 /* GTShortcutLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTShortcutLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83ED8EF21A0477C9001A6335 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		83ED8EF51A0477C9001A6335 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -103,6 +113,11 @@
 		831D65201A047CED0073CAF3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				83D8F9A91A05DF950035FD64 /* macau.png */,
+				83D8F9AA1A05DF950035FD64 /* hong-kong.png */,
+				83D8F9AB1A05DF950035FD64 /* south-korea.png */,
+				83D8F9AC1A05DF950035FD64 /* japan.png */,
+				83D8F9AD1A05DF950035FD64 /* the-republic-of-china.png */,
 				83ED8F261A04783F001A6335 /* GSLMainWindow.xib */,
 				83ED8F071A0477C9001A6335 /* GSLMainMenu.xib */,
 			);
@@ -290,12 +305,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D8F9B11A05DF950035FD64 /* japan.png in Resources */,
 				83ED8F271A04783F001A6335 /* GSLMainWindow.xib in Resources */,
+				83D8F9AF1A05DF950035FD64 /* hong-kong.png in Resources */,
 				83ED8EFD1A0477C9001A6335 /* InfoPlist.strings in Resources */,
 				83ED8F0B1A0477C9001A6335 /* Images.xcassets in Resources */,
+				83D8F9AE1A05DF950035FD64 /* macau.png in Resources */,
 				83ED8F3E1A047C1B001A6335 /* README.md in Resources */,
 				83ED8F031A0477C9001A6335 /* Credits.rtf in Resources */,
 				83ED8F381A047C1B001A6335 /* .gitignore in Resources */,
+				83D8F9B01A05DF950035FD64 /* south-korea.png in Resources */,
+				83D8F9B21A05DF950035FD64 /* the-republic-of-china.png in Resources */,
 				83ED8F091A0477C9001A6335 /* GSLMainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

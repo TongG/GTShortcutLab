@@ -32,9 +32,12 @@
  ****************************************************************************/
 
 #import "GSLMainWindowController.h"
+#import "MASShortcut.h"
 
 // GSLMainWindowController class
 @implementation GSLMainWindowController
+
+@synthesize menu = _menu;
 
 #pragma mark Initializers
 + ( id ) mainWindowController
@@ -55,7 +58,7 @@
 #pragma mark Conforms <NSNibAwaking> protocol
 - ( void ) awakeFromNib
     {
-    // TODO:
+//    MASShortcut* shortcut = [ MASShortcut shortcutWithKeyCode: 
     }
 
 @end // GSLMainWindowController

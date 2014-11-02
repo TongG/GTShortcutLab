@@ -36,6 +36,8 @@
 // GSLMainWindowController class
 @interface GSLMainWindowController : NSWindowController
 
+@property ( nonatomic, unsafe_unretained ) IBOutlet NSMenu* menu;
+
 + ( id ) mainWindowController;
 
 @end // GSLMainWindowController
