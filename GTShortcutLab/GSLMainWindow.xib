@@ -15,26 +15,30 @@
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="462" width="203" height="109"/>
+            <rect key="contentRect" x="196" y="462" width="203" height="87"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
             <view key="contentView" id="EiT-Mj-1SZ" customClass="GSLMainWindowContentView">
-                <rect key="frame" x="0.0" y="0.0" width="203" height="109"/>
+                <rect key="frame" x="0.0" y="0.0" width="203" height="87"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x29-zq-eSv" customClass="MASShortcutView">
-                        <rect key="frame" x="20" y="64" width="163" height="25"/>
+                        <rect key="frame" x="20" y="42" width="163" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S26-Pj-S4f">
-                        <rect key="frame" x="20" y="18" width="163" height="25"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rhd-de-DyE">
+                        <rect key="frame" x="43" y="12" width="116" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="roundTextured" title="Round Textured" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="19W-dz-f0r">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                        <buttonCell key="cell" type="check" title="Enable Shorcut" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="YMw-Wn-5gb">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="enableShorcutChanged:" target="EiT-Mj-1SZ" id="niN-f2-H31"/>
+                        </connections>
                     </button>
                 </subviews>
                 <connections>
+                    <outlet property="enableShorcutCheckBox" destination="Rhd-de-DyE" id="bvz-dX-U8h"/>
                     <outlet property="shortcutView" destination="x29-zq-eSv" id="SWF-MS-Stp"/>
                 </connections>
             </view>

@@ -39,6 +39,7 @@
 @interface GSLMainWindowContentView : NSView
 
 @property ( nonatomic, unsafe_unretained ) IBOutlet MASShortcutView* shortcutView;
+@property ( nonatomic, unsafe_unretained ) IBOutlet NSButton* enableShorcutCheckBox;
 
 @end // GLSMainWindowContentView class
 

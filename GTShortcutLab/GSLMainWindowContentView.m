@@ -38,6 +38,7 @@
 @implementation GSLMainWindowContentView
 
 @synthesize shortcutView = _shortcutView;
+@synthesize enableShorcutCheckBox = _enableShorcutCheckBox;
 
 - ( void ) awakeFromNib
     {
@@ -64,56 +65,40 @@ typedef void ( ^GSLPrintBlock )( void );
     NSLog( @"%@", fuckingBlock );
     }
 
+- ( void ) drawRect: ( NSRect )_DirtyRect
+    {
+    NSRect oneRect = NSMakeRect( 20, 20, 50, 50 );
+    NSRect offsettedRect = NSRectFromCGRect( CGRectOffset( NSRectToCGRect( oneRect ), 10, 10 ) );
+
+    NSFrameRectWithWidth( oneRect, 3.f );
+    NSFrameRectWithWidth( offsettedRect, 3.f );
+
+    [ super drawRect: _DirtyRect ];
+    }
+
 - ( void ) keyDown: ( NSEvent* )_Event
     {
-    NSString* TongGuo = @"Long live TongGuo!";
-    NSUInteger count = 20;
+#if 0
+    MASShortcut* shortcut = [ MASShortcut shortcutWithEvent: _Event ];
+    NSLog( @"%@", shortcut.keyCodeString );
+    NSLog( @"%@", shortcut.keyCodeStringForKeyEquivalent );
+    NSLog( @"%@", shortcut.modifierFlagsString );
+    NSLog( @"Complete: %@", shortcut.description );
+    printf( "\n\n" );
 
-    GSLPrintBlock printFuck =
-        ^void ( void )
-            {
-            for ( int index = 0; index < count; index++ )
-                NSLog( @"%@", TongGuo );
-            };
+    NSLog( @"%@", [ NSApp mainMenu ].itemArray );
 
-    [ self handleBlocks: printFuck ];
-
-//    dispatch_once_t static sOnceToken;
-//    dispatch_once( &sOnceToken, printFuck );
-
-//    unsigned long stdFlags = ( NSControlKeyMask | NSAlternateKeyMask | NSCommandKeyMask | NSNumericPadKeyMask );
-//    NSLog( @"Standard Flags: %lu", stdFlags );
-//
-//    MASShortcut* shortcut = [ MASShortcut shortcutWithKeyCode: kVK_ANSI_O
-//                                                modifierFlags: stdFlags ];
-//    NSLog( @"Key code after filtering: %lu", [ shortcut keyCode ] );
-//    NSLog( @"Carbon key code: %u", [ shortcut carbonKeyCode ] );
-//    NSLog( @"Flags after filtering: %lu", [ shortcut modifierFlags ] );
-//    printf( "\n\n" );
-
-//    MASShortcut* shortcut = [ MASShortcut shortcutWithEvent: _Event ];
-//    shortcut
-//    NSLog( @"%@", shortcut.keyCodeString );
-//    NSLog( @"%@", shortcut.keyCodeStringForKeyEquivalent );
-//    NSLog( @"%@", shortcut.modifierFlagsString );
-//    NSLog( @"Complete: %@", shortcut.description );
-//    printf( "\n\n" );
-//
-//    NSLog( @"%@", [ NSApp mainMenu ].itemArray );
-//
-//    NSLog( @"%@", MASShortcutChar( 0xF710 ) );
-
+    NSLog( @"%@", MASShortcutChar( 0xF710 ) );
+#endif
     [ super keyDown: _Event ];
     }
 
-#if 0
-- ( void ) mouseDown: ( NSEvent* )_Event
+#pragma mark IBActions
+- ( IBAction ) enableShorcutChanged: ( id )_Sender
     {
-    MASShortcut* shortcut = [ MASShortcut shortcutWithEvent: _Event ];
-
-    [ super mouseDown: _Event ];
+    [ self.shortcutView setEnabled: self.enableShorcutCheckBox.state == NSOnState ];
     }
-#endif
+
 @end // GSLMainWindowContentView class
 
 //////////////////////////////////////////////////////////////////////////////
