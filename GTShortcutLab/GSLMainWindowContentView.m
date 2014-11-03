@@ -46,18 +46,33 @@
     return YES;
     }
 
+typedef void ( ^GSLPrintBlock )( void );
+- ( void ) handleBlocks: ( GSLPrintBlock )_Block
+    {
+    GSLPrintBlock anotherPrintFuckBlock = [ _Block copy ];
+    GSLPrintBlock fuckingBlock = [ anotherPrintFuckBlock copy ];
+
+    NSLog( @"%@", anotherPrintFuckBlock );
+    NSLog( @"%@", fuckingBlock );
+    }
+
 - ( void ) keyDown: ( NSEvent* )_Event
     {
-    typedef void ( ^GSLPrintBlock )( void );
+    NSString* TongGuo = @"Long live TongGuo!";
+    NSUInteger count = 20;
+
     GSLPrintBlock printFuck =
         ^void ( void )
             {
-            NSLog( @"Fuck" );
+            for ( int index = 0; index < count; index++ )
+                NSLog( @"%@", TongGuo );
             };
 
-    dispatch_once_t static sOnceToken;
-    dispatch_once( &sOnceToken, printFuck );
-    
+    [ self handleBlocks: printFuck ];
+
+//    dispatch_once_t static sOnceToken;
+//    dispatch_once( &sOnceToken, printFuck );
+
 //    unsigned long stdFlags = ( NSControlKeyMask | NSAlternateKeyMask | NSCommandKeyMask | NSNumericPadKeyMask );
 //    NSLog( @"Standard Flags: %lu", stdFlags );
 //
