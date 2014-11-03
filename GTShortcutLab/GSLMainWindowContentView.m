@@ -32,9 +32,17 @@
  ****************************************************************************/
 
 #import "GSLMainWindowContentView.h"
+#import "MASShortcutView.h"
 
 #pragma mark GSLMainWindowContentView class
 @implementation GSLMainWindowContentView
+
+@synthesize shortcutView = _shortcutView;
+
+- ( void ) awakeFromNib
+    {
+    self.shortcutView.appearance = MASShortcutViewAppearanceTexturedRect;
+    }
 
 - ( BOOL ) canBecomeKeyView
     {

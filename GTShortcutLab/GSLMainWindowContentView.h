@@ -33,9 +33,12 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class MASShortcutView;
+
 #pragma mark GSLMainWindowContentView class
 @interface GSLMainWindowContentView : NSView
 
+@property ( nonatomic, unsafe_unretained ) IBOutlet MASShortcutView* shortcutView;
 
 @end // GLSMainWindowContentView class
 
