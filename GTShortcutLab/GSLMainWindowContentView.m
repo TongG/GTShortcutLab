@@ -67,11 +67,19 @@ typedef void ( ^GSLPrintBlock )( void );
 
 - ( void ) drawRect: ( NSRect )_DirtyRect
     {
-    NSRect oneRect = NSMakeRect( 20, 20, 50, 50 );
-    NSRect offsettedRect = NSRectFromCGRect( CGRectOffset( NSRectToCGRect( oneRect ), 10, 10 ) );
+    CGRect lhsRect = NSZeroRect;
+    CGRect rhsRect = NSZeroRect;
 
-    NSFrameRectWithWidth( oneRect, 3.f );
-    NSFrameRectWithWidth( offsettedRect, 3.f );
+    CGRectDivide( self.bounds, &lhsRect, &rhsRect, 20, CGRectMinXEdge );
+
+//    NSFrameRectWithWidth( lhsRect, 3.f );
+//    NSFrameRectWithWidth( rhsRect, 3.f );
+
+//    NSRect oneRect = NSMakeRect( 20, 20, 50, 50 );
+//    NSRect offsettedRect = NSRectFromCGRect( CGRectOffset( NSRectToCGRect( oneRect ), 10, 10 ) );
+//
+//    NSFrameRectWithWidth( oneRect, 3.f );
+//    NSFrameRectWithWidth( offsettedRect, 3.f );
 
     [ super drawRect: _DirtyRect ];
     }
