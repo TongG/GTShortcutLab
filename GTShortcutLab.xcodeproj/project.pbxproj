@@ -48,6 +48,7 @@
 /* Begin PBXFileReference section */
 		831D65211A048B400073CAF3 /* GSLMainWindowContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSLMainWindowContentView.h; sourceTree = "<group>"; };
 		831D65221A048B400073CAF3 /* GSLMainWindowContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSLMainWindowContentView.m; sourceTree = "<group>"; };
+		838E36211A08E2780036B8FA /* GSLCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSLCommon.h; path = GTShortcutLabTests/GSLCommon.h; sourceTree = SOURCE_ROOT; };
 		83D8F9A91A05DF950035FD64 /* macau.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macau.png; sourceTree = "<group>"; };
 		83D8F9AA1A05DF950035FD64 /* hong-kong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hong-kong.png"; sourceTree = "<group>"; };
 		83D8F9AB1A05DF950035FD64 /* south-korea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "south-korea.png"; sourceTree = "<group>"; };
@@ -186,6 +187,7 @@
 				83ED8EFA1A0477C9001A6335 /* GTShortcutLab-Info.plist */,
 				83ED8EFB1A0477C9001A6335 /* InfoPlist.strings */,
 				83ED8EFE1A0477C9001A6335 /* main.m */,
+				838E36211A08E2780036B8FA /* GSLCommon.h */,
 				83ED8F001A0477C9001A6335 /* GTShortcutLab-Prefix.pch */,
 				83ED8F011A0477C9001A6335 /* Credits.rtf */,
 			);
