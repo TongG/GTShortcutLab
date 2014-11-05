@@ -40,9 +40,25 @@
 @synthesize shortcutView = _shortcutView;
 @synthesize enableShorcutCheckBox = _enableShorcutCheckBox;
 
+@synthesize monitor = _monitor;
+
 - ( void ) awakeFromNib
     {
     self.shortcutView.appearance = MASShortcutViewAppearanceTexturedRect;
+
+    [ self.shortcutView setShortcutValueChange:
+        ^( MASShortcutView* _Sender )
+            {
+            if ( self.monitor )
+                {
+                [ MASShortcut removeGlobalHotkeyMonitor: self.monitor ];
+                [ self.monitor release ];
+                }
+
+            MASShortcutMonitor* monitor = [ MASShortcut addGlobalHotkeyMonitorWithShortcut: [ _Sender shortcutValue ]
+                                                                                   handler: ^{ NSLog( @"Fuck!" ); } ];
+            self.monitor = [ monitor copy ];
+            } ];
     }
 
 - ( BOOL ) canBecomeKeyView

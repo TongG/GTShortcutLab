@@ -41,6 +41,8 @@
 @property ( nonatomic, unsafe_unretained ) IBOutlet MASShortcutView* shortcutView;
 @property ( nonatomic, unsafe_unretained ) IBOutlet NSButton* enableShorcutCheckBox;
 
+@property ( nonatomic, copy ) MASShortcutMonitor* monitor;
+
 @end // GLSMainWindowContentView class
 
 //////////////////////////////////////////////////////////////////////////////
