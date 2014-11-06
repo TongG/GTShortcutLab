@@ -60,6 +60,8 @@
             if ( monitor )
                 self.monitor = [ monitor copy ];
             } ];
+
+    [ self.shortcutView setAssociatedUserDefaultsKey: @"MASShortcutViewUserDefautKey" ];
     }
 
 - ( BOOL ) canBecomeKeyView
