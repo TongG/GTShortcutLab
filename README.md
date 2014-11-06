@@ -1,6 +1,3 @@
-GTShortcutLab
-=============
-
 # Summary
 
 This is a test app for the project [MASShortcut](https://github.com/TongG/MASShortcut). All “framework” code is in a submodule and I would recommend the same approach for your own respositories.
