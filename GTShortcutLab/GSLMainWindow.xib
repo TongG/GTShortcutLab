@@ -6,27 +6,34 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="GSLMainWindowController">
             <connections>
-                <outlet property="menu" destination="jKg-lR-UCp" id="78e-CP-riI"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="JvV-DU-0jz"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application"/>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="Shortcut Lab" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="462" width="203" height="87"/>
+            <rect key="contentRect" x="196" y="462" width="383" height="207"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
             <view key="contentView" id="EiT-Mj-1SZ" customClass="GSLMainWindowContentView">
-                <rect key="frame" x="0.0" y="0.0" width="203" height="87"/>
-                <autoresizingMask key="autoresizingMask"/>
+                <rect key="frame" x="0.0" y="0.0" width="383" height="207"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x29-zq-eSv" customClass="MASShortcutView">
-                        <rect key="frame" x="20" y="42" width="163" height="25"/>
+                    <customView identifier="Default Style" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x29-zq-eSv" customClass="MASShortcutView">
+                        <rect key="frame" x="129" y="169" width="163" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </customView>
+                    <customView identifier="Rounded Style" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ve3-Lr-IE3" customClass="MASShortcutView">
+                        <rect key="frame" x="129" y="92" width="163" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </customView>
+                    <customView identifier="Textured Style" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZgS-uJ-vlZ" customClass="MASShortcutView">
+                        <rect key="frame" x="129" y="129" width="163" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rhd-de-DyE">
-                        <rect key="frame" x="43" y="12" width="116" height="18"/>
+                        <rect key="frame" x="133" y="18" width="116" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="check" title="Enable Shorcut" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="YMw-Wn-5gb">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -36,24 +43,91 @@
                             <action selector="enableShorcutChanged:" target="EiT-Mj-1SZ" id="niN-f2-H31"/>
                         </connections>
                     </button>
+                    <customView identifier="Recessed Style" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="92a-St-R2R" customClass="MASShortcutView">
+                        <rect key="frame" x="129" y="55" width="163" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </customView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1AX-dC-aGl">
+                        <rect key="frame" x="18" y="170" width="99" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Default Style:" id="uQ3-2M-nFA">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="64i-CE-nTl">
+                        <rect key="frame" x="18" y="133" width="98" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Textured Style:" id="yaz-V3-Mes">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VBC-9c-nWK">
+                        <rect key="frame" x="18" y="96" width="98" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Rounded Style:" id="uo3-bf-hwU">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wwt-dJ-a93">
+                        <rect key="frame" x="18" y="59" width="99" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Recessed Style:" id="fVq-VC-DWj">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Heg-n0-Ckv">
+                        <rect key="frame" x="298" y="173" width="67" height="11"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Height: 19px" id="pp5-af-kSt">
+                            <font key="font" metaFont="miniSystem"/>
+                            <color key="textColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dlh-gR-qGT">
+                        <rect key="frame" x="298" y="136" width="67" height="11"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Height: 25px" id="hXo-pP-OdU">
+                            <font key="font" metaFont="miniSystem"/>
+                            <color key="textColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4jV-Kr-pkZ">
+                        <rect key="frame" x="298" y="99" width="67" height="11"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Height: 25px" id="fEe-X2-3jG">
+                            <font key="font" metaFont="miniSystem"/>
+                            <color key="textColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qVV-SO-JQt">
+                        <rect key="frame" x="298" y="62" width="67" height="11"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Height: 25px" id="eL0-tU-RK1">
+                            <font key="font" metaFont="miniSystem"/>
+                            <color key="textColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
                 <connections>
+                    <outlet property="defaultStyleShortcutView" destination="x29-zq-eSv" id="BoD-xh-D6d"/>
                     <outlet property="enableShorcutCheckBox" destination="Rhd-de-DyE" id="bvz-dX-U8h"/>
-                    <outlet property="shortcutView" destination="x29-zq-eSv" id="SWF-MS-Stp"/>
+                    <outlet property="recessedStyleShortcutView" destination="92a-St-R2R" id="RW0-dc-YLV"/>
+                    <outlet property="roundedStyleShortcutView" destination="Ve3-Lr-IE3" id="7wb-p6-CH9"/>
+                    <outlet property="texturedStyleShortcutView" destination="ZgS-uJ-vlZ" id="kxf-TO-Na2"/>
                 </connections>
             </view>
         </window>
-        <menu id="jKg-lR-UCp">
-            <items>
-                <menuItem title="Japan" image="japan" keyEquivalent="J" id="V9u-zo-xTZ"/>
-                <menuItem title="South Korea" image="south-korea" keyEquivalent="S" id="CgE-5B-44G"/>
-                <menuItem title="Taiwan" image="the-republic-of-china" keyEquivalent="T" id="8DQ-8T-2VB"/>
-            </items>
-        </menu>
     </objects>
-    <resources>
-        <image name="japan" width="250" height="167"/>
-        <image name="south-korea" width="250" height="167"/>
-        <image name="the-republic-of-china" width="250" height="167"/>
-    </resources>
 </document>

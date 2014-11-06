@@ -38,10 +38,17 @@
 #pragma mark GSLMainWindowContentView class
 @interface GSLMainWindowContentView : NSView
 
-@property ( nonatomic, unsafe_unretained ) IBOutlet MASShortcutView* shortcutView;
+@property ( nonatomic, unsafe_unretained ) IBOutlet MASShortcutView* defaultStyleShortcutView;
+@property ( nonatomic, unsafe_unretained ) IBOutlet MASShortcutView* texturedStyleShortcutView;
+@property ( nonatomic, unsafe_unretained ) IBOutlet MASShortcutView* roundedStyleShortcutView;
+@property ( nonatomic, unsafe_unretained ) IBOutlet MASShortcutView* recessedStyleShortcutView;
+
 @property ( nonatomic, unsafe_unretained ) IBOutlet NSButton* enableShorcutCheckBox;
 
-@property ( nonatomic, copy ) MASShortcutMonitor* monitor;
+@property ( nonatomic, copy ) MASShortcutMonitor* defaultStyleMonitor;
+@property ( nonatomic, copy ) MASShortcutMonitor* texturedStyleMonitor;
+@property ( nonatomic, copy ) MASShortcutMonitor* roundedStyleMonitor;
+@property ( nonatomic, copy ) MASShortcutMonitor* recessedStyleMonitor;
 
 @end // GLSMainWindowContentView class
 
