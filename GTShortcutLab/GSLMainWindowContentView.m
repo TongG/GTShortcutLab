@@ -50,10 +50,7 @@
         ^( MASShortcutView* _Sender )
             {
             if ( self.monitor )
-                {
                 [ MASShortcut removeGlobalHotkeyMonitor: self.monitor ];
-                [ self.monitor release ];
-                }
 
             MASShortcutMonitor* monitor = [ MASShortcut addGlobalHotkeyMonitorWithShortcut: [ _Sender shortcutValue ]
                                                                                    handler: ^{ NSLog( @"Fuck!" ); } ];
